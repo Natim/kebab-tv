@@ -33,6 +33,16 @@
   fields:
     name: Panini
     illustration: uploads/category_panini.jpg
+- model: menu.category
+  pk: 8
+  fields:
+    name: Les assiettes
+    illustration: uploads/category_les-assiettes.jpg
+- model: menu.category
+  pk: 9
+  fields:
+    name: Menu du Jour
+    illustration: ''
 - model: menu.product
   pk: 1
   fields:
@@ -250,6 +260,69 @@
     priceEuroCents: 300
     is_active: true
     category: 7
+- model: menu.product
+  pk: 32
+  fields:
+    name: Kebab
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 33
+  fields:
+    name: Köfte
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 34
+  fields:
+    name: Poulet
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 35
+  fields:
+    name: Agneau
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 36
+  fields:
+    name: Adana
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 37
+  fields:
+    name: Mixte
+    priceEuroCents: 1200
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 38
+  fields:
+    name: Plat du jour
+    priceEuroCents: 850
+    is_active: true
+    category: 9
+- model: menu.product
+  pk: 39
+  fields:
+    name: Salade
+    priceEuroCents: 400
+    is_active: true
+    category: 9
+- model: menu.product
+  pk: 40
+  fields:
+    name: Café
+    priceEuroCents: 1
+    is_active: true
+    category: 9
 - model: menu.screen
   pk: 1
   fields:
@@ -268,3 +341,11 @@
     - 5
     - 6
     - 7
+- model: menu.screen
+  pk: 3
+  fields:
+    name: Page 3
+    title: Les assiettes (avec frites, crudités et blé concassé)
+    categories:
+    - 8
+    - 9
