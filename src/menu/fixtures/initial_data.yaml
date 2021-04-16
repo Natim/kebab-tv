@@ -2,21 +2,46 @@
   pk: 1
   fields:
     name: Menus Burger
-    illustration: ''
+    illustration: uploads/category_menus-burger.jpg
 - model: menu.category
   pk: 2
   fields:
-    name: Menus Sandwitch
-    illustration: ''
+    name: Menus Sandwich
+    illustration: uploads/category_menus-sandwitch.png
 - model: menu.category
   pk: 3
   fields:
     name: Les boissons
-    illustration: ''
+    illustration: uploads/category_les-boissons.jpg
 - model: menu.category
   pk: 4
   fields:
     name: Desserts
+    illustration: uploads/category_desserts.jpg
+- model: menu.category
+  pk: 5
+  fields:
+    name: Burger
+    illustration: uploads/category_burger.png
+- model: menu.category
+  pk: 6
+  fields:
+    name: Sandwich
+    illustration: uploads/category_sandwich.jpg
+- model: menu.category
+  pk: 7
+  fields:
+    name: Panini
+    illustration: uploads/category_panini.jpg
+- model: menu.category
+  pk: 8
+  fields:
+    name: Les assiettes
+    illustration: uploads/category_les-assiettes.jpg
+- model: menu.category
+  pk: 9
+  fields:
+    name: Menu du Jour
     illustration: ''
 - model: menu.product
   pk: 1
@@ -144,6 +169,160 @@
     priceEuroCents: 50
     is_active: true
     category: 4
+- model: menu.product
+  pk: 19
+  fields:
+    name: Cheese
+    priceEuroCents: 350
+    is_active: true
+    category: 5
+- model: menu.product
+  pk: 20
+  fields:
+    name: Double Cheese
+    priceEuroCents: 500
+    is_active: true
+    category: 5
+- model: menu.product
+  pk: 21
+  fields:
+    name: Chicken
+    priceEuroCents: 450
+    is_active: true
+    category: 5
+- model: menu.product
+  pk: 22
+  fields:
+    name: Kebab
+    priceEuroCents: 500
+    is_active: true
+    category: 6
+- model: menu.product
+  pk: 23
+  fields:
+    name: Köfte
+    priceEuroCents: 500
+    is_active: true
+    category: 6
+- model: menu.product
+  pk: 24
+  fields:
+    name: Poulet
+    priceEuroCents: 500
+    is_active: true
+    category: 6
+- model: menu.product
+  pk: 25
+  fields:
+    name: Triple Steak
+    priceEuroCents: 600
+    is_active: true
+    category: 6
+- model: menu.product
+  pk: 26
+  fields:
+    name: Agneau
+    priceEuroCents: 500
+    is_active: true
+    category: 6
+- model: menu.product
+  pk: 27
+  fields:
+    name: Adana
+    priceEuroCents: 500
+    is_active: true
+    category: 6
+- model: menu.product
+  pk: 28
+  fields:
+    name: Kebab
+    priceEuroCents: 450
+    is_active: true
+    category: 7
+- model: menu.product
+  pk: 29
+  fields:
+    name: 3 fromages
+    priceEuroCents: 450
+    is_active: true
+    category: 7
+- model: menu.product
+  pk: 30
+  fields:
+    name: Steak
+    priceEuroCents: 450
+    is_active: true
+    category: 7
+- model: menu.product
+  pk: 31
+  fields:
+    name: Nutella
+    priceEuroCents: 300
+    is_active: true
+    category: 7
+- model: menu.product
+  pk: 32
+  fields:
+    name: Kebab
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 33
+  fields:
+    name: Köfte
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 34
+  fields:
+    name: Poulet
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 35
+  fields:
+    name: Agneau
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 36
+  fields:
+    name: Adana
+    priceEuroCents: 850
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 37
+  fields:
+    name: Mixte
+    priceEuroCents: 1200
+    is_active: true
+    category: 8
+- model: menu.product
+  pk: 38
+  fields:
+    name: Plat du jour
+    priceEuroCents: 850
+    is_active: true
+    category: 9
+- model: menu.product
+  pk: 39
+  fields:
+    name: Salade
+    priceEuroCents: 400
+    is_active: true
+    category: 9
+- model: menu.product
+  pk: 40
+  fields:
+    name: Café
+    priceEuroCents: 1
+    is_active: true
+    category: 9
 - model: menu.screen
   pk: 1
   fields:
@@ -153,4 +332,20 @@
     - 1
     - 2
     - 3
-    - 4
+- model: menu.screen
+  pk: 2
+  fields:
+    name: Page 2
+    title: 'Les sandwichs : Burger ou Sandwich ou Panini'
+    categories:
+    - 5
+    - 6
+    - 7
+- model: menu.screen
+  pk: 3
+  fields:
+    name: Page 3
+    title: Les assiettes (avec frites, crudités et blé concassé)
+    categories:
+    - 8
+    - 9

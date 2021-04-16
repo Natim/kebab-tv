@@ -30,7 +30,9 @@ class Product(models.Model):
         verbose_name="Price in euro cents",
     )
     is_active = models.BooleanField(default=True)
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, blank=True, null=True)
+    category = models.ForeignKey(
+        Category, related_name="products", on_delete=models.SET_NULL, blank=True, null=True
+    )
 
     def __str__(self):
         return self.name
