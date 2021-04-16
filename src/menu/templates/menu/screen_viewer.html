@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Kebab TV — {{ screen.name }} — {{ screen.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+  <h1> <img src="{% static 'images/logo.png' %}"> </h1>
+  <h2>{{ screen.title }}</h2>
+
+  <section>
+    {% for category in screen.categories.all %}
+    <aside class="">
+      <h3>{{ category.name }}</h3>
+      <dl class="">
+        {% for product in category.products.all %}
+          <dt>{{ product.name }}</dt>
+          <dd>{{ product.priceEuroCents }}</dd>
+        {% endfor %}
+      </dl>
+      {% if category.illustration %}
+      <img src='{{ category.illustration.url }}'>
+      {% endif %}
+    </aside>
+    {% endfor %}
+  </section>
+</body>
+</html>

@@ -2,22 +2,22 @@
   pk: 1
   fields:
     name: Menus Burger
-    illustration: ''
+    illustration: uploads/category_menus-burger.jpg
 - model: menu.category
   pk: 2
   fields:
     name: Menus Sandwitch
-    illustration: ''
+    illustration: uploads/category_menus-sandwitch.png
 - model: menu.category
   pk: 3
   fields:
     name: Les boissons
-    illustration: ''
+    illustration: uploads/category_les-boissons.jpg
 - model: menu.category
   pk: 4
   fields:
     name: Desserts
-    illustration: ''
+    illustration: uploads/category_desserts.jpg
 - model: menu.product
   pk: 1
   fields:
