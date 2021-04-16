@@ -1,4 +1,5 @@
 {% load static %}
+{% load menu_extras %}
 <!DOCTYPE html>
 <html>
 
@@ -23,7 +24,7 @@
       <dl class="">
         {% for product in category.products.all %}
           <dt>{{ product.name }}</dt>
-          <dd>{{ product.priceEuroCents }}</dd>
+          <dd>{{ product.priceEuroCents|euros }}</dd>
         {% endfor %}
       </dl>
       {% if category.illustration %}
