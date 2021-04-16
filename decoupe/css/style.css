@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-
 }
 
 h1 {
@@ -22,6 +21,7 @@ h2 {
 section {
   display: flex;
   justify-content: space-between;
+  padding: 15px;
 }
 
 section aside {
