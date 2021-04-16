@@ -1,0 +1,156 @@
+- model: menu.category
+  pk: 1
+  fields:
+    name: Menus Burger
+    illustration: ''
+- model: menu.category
+  pk: 2
+  fields:
+    name: Menus Sandwitch
+    illustration: ''
+- model: menu.category
+  pk: 3
+  fields:
+    name: Les boissons
+    illustration: ''
+- model: menu.category
+  pk: 4
+  fields:
+    name: Desserts
+    illustration: ''
+- model: menu.product
+  pk: 1
+  fields:
+    name: Le cheese
+    priceEuroCents: 550
+    is_active: true
+    category: 1
+- model: menu.product
+  pk: 2
+  fields:
+    name: Le Double Cheese
+    priceEuroCents: 750
+    is_active: true
+    category: 1
+- model: menu.product
+  pk: 3
+  fields:
+    name: Le Chiken
+    priceEuroCents: 600
+    is_active: true
+    category: 1
+- model: menu.product
+  pk: 4
+  fields:
+    name: Kebab
+    priceEuroCents: 650
+    is_active: true
+    category: 2
+- model: menu.product
+  pk: 5
+  fields:
+    name: Köfte
+    priceEuroCents: 650
+    is_active: true
+    category: 2
+- model: menu.product
+  pk: 6
+  fields:
+    name: Poulet
+    priceEuroCents: 650
+    is_active: true
+    category: 2
+- model: menu.product
+  pk: 7
+  fields:
+    name: Triple steak
+    priceEuroCents: 750
+    is_active: true
+    category: 2
+- model: menu.product
+  pk: 8
+  fields:
+    name: Agneau
+    priceEuroCents: 650
+    is_active: true
+    category: 2
+- model: menu.product
+  pk: 9
+  fields:
+    name: Adana
+    priceEuroCents: 700
+    is_active: true
+    category: 2
+- model: menu.product
+  pk: 10
+  fields:
+    name: Soda 33cl
+    priceEuroCents: 150
+    is_active: true
+    category: 3
+- model: menu.product
+  pk: 11
+  fields:
+    name: Soda 50cl
+    priceEuroCents: 200
+    is_active: true
+    category: 3
+- model: menu.product
+  pk: 12
+  fields:
+    name: Eau 33cl
+    priceEuroCents: 150
+    is_active: true
+    category: 3
+- model: menu.product
+  pk: 13
+  fields:
+    name: Eau Gazeuse 33cl
+    priceEuroCents: 180
+    is_active: true
+    category: 3
+- model: menu.product
+  pk: 14
+  fields:
+    name: Ayran
+    priceEuroCents: 200
+    is_active: true
+    category: 3
+- model: menu.product
+  pk: 15
+  fields:
+    name: Thé
+    priceEuroCents: 120
+    is_active: true
+    category: 3
+- model: menu.product
+  pk: 16
+  fields:
+    name: Café
+    priceEuroCents: 120
+    is_active: true
+    category: 3
+- model: menu.product
+  pk: 17
+  fields:
+    name: Baklawa
+    priceEuroCents: 100
+    is_active: true
+    category: 4
+- model: menu.product
+  pk: 18
+  fields:
+    name: Loukoum
+    priceEuroCents: 50
+    is_active: true
+    category: 4
+- model: menu.screen
+  pk: 1
+  fields:
+    name: Page 1
+    title: 'Le menu : Burger ou Sandwich + Frites + Soda 33 cl'
+    categories:
+    - 1
+    - 2
+    - 3
+    - 4
