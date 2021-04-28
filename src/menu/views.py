@@ -1,11 +1,17 @@
 from django.shortcuts import render
+from collections import defaultdict
 
 from .models import Screen
 
 
 def screen_viewer(request, screen_id):
     screen = Screen.objects.get(pk=screen_id)
-    context = {"screen": screen}
+
+    columns = defaultdict(list)
+    layouts = screen.category_layouts.all()
+    for layout in layouts:
+        columns[layout.column].append(layout.category)
+    context = {"screen": screen, "columns": {**columns}}
     return render(request, "menu/screen_viewer.html", context)
 
 

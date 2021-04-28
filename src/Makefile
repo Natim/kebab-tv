@@ -8,8 +8,11 @@ all: install
 runserver: install
 	$(PYTHON) manage.py runserver
 
+shell: install
+	$(PYTHON) manage.py shell
+
 makemigrations: install
-	$(PYTHON) manage.py migrate
+	$(PYTHON) manage.py makemigrations
 
 migrate: install
 	$(PYTHON) manage.py migrate

@@ -17,21 +17,39 @@
   <h1> <img src="{% static 'images/logo.png' %}"> </h1>
   <h2>{{ screen.title }}</h2>
 
-  <section>
-    {% for category in screen.categories.all %}
-    <aside class="">
-      <h3>{{ category.name }}</h3>
-      <dl class="">
-        {% for product in category.products.all %}
-          <dt>{{ product.name }}</dt>
-          <dd>{{ product.priceEuroCents|euros }}</dd>
-        {% endfor %}
-      </dl>
-      {% if category.illustration %}
-      <img src='{{ category.illustration.url }}'>
+  <div class="content">
+      {% for column, categories in columns.items %}
+      {% if categories|length == 1 %}
+      {% for category in categories %}
+      <div class="category">
+          <h3>{{ category.name }}</h3>
+          <dl class="">
+              {% for product in category.products.all %}
+              <dt>{{ product.name }}</dt>
+              <dd>{{ product.priceEuroCents|euros }}</dd>
+              {% endfor %}
+          </dl>
+          {% if category.illustration %}
+          <img src='{{ category.illustration.url }}'>
+          {% endif %}
+      </div>
+      {% endfor %}
+      {% else %}
+      <div class="column">
+          {% for category in categories %}
+          <div class="category">
+              <h3>{{ category.name }}</h3>
+              <dl class="">
+                  {% for product in category.products.all %}
+                  <dt>{{ product.name }}</dt>
+                  <dd>{{ product.priceEuroCents|euros }}</dd>
+                  {% endfor %}
+              </dl>
+          </div>
+          {% endfor %}
+      </div>
       {% endif %}
-    </aside>
     {% endfor %}
-  </section>
+  </div>
 </body>
 </html>

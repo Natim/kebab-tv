@@ -46,10 +46,25 @@ class Product(OrderableModel):
 class Screen(OrderableModel):
     name = models.CharField(max_length=75)
     title = models.CharField(max_length=150)
-    categories = models.ManyToManyField(Category)
+    layouts = models.ManyToManyField(Category, through="CategoryLayout")
 
     def __str__(self):
         return self.name
 
     class Meta:
         ordering = ["ordering"]
+
+        
+class CategoryLayout(models.Model):
+    COLUMN_1 = 1
+    COLUMN_2 = 2
+    COLUMN_3 = 3
+    COLUMN_CHOICES = (
+        (COLUMN_1, 'Column 1'),
+        (COLUMN_2, 'Column 2'),
+        (COLUMN_3, 'Column 3'),
+    )
+
+    category = models.ForeignKey('Category', related_name='layout', on_delete=models.CASCADE)
+    screen = models.ForeignKey('Screen', related_name='category_layouts', on_delete=models.CASCADE)
+    column = models.IntegerField(choices=COLUMN_CHOICES, default=COLUMN_1)
