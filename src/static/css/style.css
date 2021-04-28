@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 h1 {
@@ -19,13 +20,13 @@ h2 {
   padding: 5px;
 }
 
-section {
+.content {
   display: flex;
   justify-content: space-between;
   padding: 15px;
 }
 
-section aside {
+.content .category {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -35,7 +36,27 @@ section aside {
   padding: 15px;
 }
 
-aside img {
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin: -20px -20px;
+  padding: 15px;
+}
+
+.column .category {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: url('../images/footer.jpg');
+  border-radius: 15px;
+  margin: 10px 20px;
+  padding: 15px;
+}
+
+
+.category img {
 	max-width: 100%;
 	max-height: 200px;
 	align-self: center;
