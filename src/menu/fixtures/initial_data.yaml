@@ -1,51 +1,61 @@
 - model: menu.category
   pk: 1
   fields:
+    ordering: 1
     name: Menus Burger
     illustration: uploads/category_menus-burger.jpg
 - model: menu.category
   pk: 2
   fields:
+    ordering: 2
     name: Menus Sandwich
     illustration: uploads/category_menus-sandwitch.png
 - model: menu.category
   pk: 3
   fields:
+    ordering: 3
     name: Les boissons
     illustration: uploads/category_les-boissons.jpg
 - model: menu.category
   pk: 4
   fields:
+    ordering: 4
     name: Desserts
     illustration: uploads/category_desserts.jpg
 - model: menu.category
   pk: 5
   fields:
+    ordering: 10
     name: Burger
     illustration: uploads/category_burger.png
 - model: menu.category
   pk: 6
   fields:
+    ordering: 11
     name: Sandwich
     illustration: uploads/category_sandwich.jpg
 - model: menu.category
   pk: 7
   fields:
+    ordering: 12
     name: Panini
     illustration: uploads/category_panini.jpg
 - model: menu.category
   pk: 8
   fields:
+    ordering: 20
     name: Les assiettes
     illustration: uploads/category_les-assiettes.jpg
 - model: menu.category
   pk: 9
   fields:
+    ordering: 21
     name: Menu du Jour
     illustration: ''
 - model: menu.product
   pk: 1
   fields:
+    ordering: 1
     name: Le cheese
     priceEuroCents: 550
     is_active: true
@@ -53,6 +63,7 @@
 - model: menu.product
   pk: 2
   fields:
+    ordering: 2
     name: Le Double Cheese
     priceEuroCents: 750
     is_active: true
@@ -60,6 +71,7 @@
 - model: menu.product
   pk: 3
   fields:
+    ordering: 3
     name: Le Chiken
     priceEuroCents: 600
     is_active: true
@@ -67,6 +79,7 @@
 - model: menu.product
   pk: 4
   fields:
+    ordering: 1
     name: Kebab
     priceEuroCents: 650
     is_active: true
@@ -74,6 +87,7 @@
 - model: menu.product
   pk: 5
   fields:
+    ordering: 2
     name: Köfte
     priceEuroCents: 650
     is_active: true
@@ -81,6 +95,7 @@
 - model: menu.product
   pk: 6
   fields:
+    ordering: 3
     name: Poulet
     priceEuroCents: 650
     is_active: true
@@ -88,6 +103,7 @@
 - model: menu.product
   pk: 7
   fields:
+    ordering: 4
     name: Triple steak
     priceEuroCents: 750
     is_active: true
@@ -95,6 +111,7 @@
 - model: menu.product
   pk: 8
   fields:
+    ordering: 5
     name: Agneau
     priceEuroCents: 650
     is_active: true
@@ -102,6 +119,7 @@
 - model: menu.product
   pk: 9
   fields:
+    ordering: 6
     name: Adana
     priceEuroCents: 700
     is_active: true
@@ -109,6 +127,7 @@
 - model: menu.product
   pk: 10
   fields:
+    ordering: 1
     name: Soda 33cl
     priceEuroCents: 150
     is_active: true
@@ -116,6 +135,7 @@
 - model: menu.product
   pk: 11
   fields:
+    ordering: 2
     name: Soda 50cl
     priceEuroCents: 200
     is_active: true
@@ -123,6 +143,7 @@
 - model: menu.product
   pk: 12
   fields:
+    ordering: 3
     name: Eau 33cl
     priceEuroCents: 150
     is_active: true
@@ -130,6 +151,7 @@
 - model: menu.product
   pk: 13
   fields:
+    ordering: 4
     name: Eau Gazeuse 33cl
     priceEuroCents: 180
     is_active: true
@@ -137,6 +159,7 @@
 - model: menu.product
   pk: 14
   fields:
+    ordering: 5
     name: Ayran
     priceEuroCents: 200
     is_active: true
@@ -144,6 +167,7 @@
 - model: menu.product
   pk: 15
   fields:
+    ordering: 6
     name: Thé
     priceEuroCents: 120
     is_active: true
@@ -151,6 +175,7 @@
 - model: menu.product
   pk: 16
   fields:
+    ordering: 7
     name: Café
     priceEuroCents: 120
     is_active: true
@@ -158,6 +183,7 @@
 - model: menu.product
   pk: 17
   fields:
+    ordering: 1
     name: Baklawa
     priceEuroCents: 100
     is_active: true
@@ -165,6 +191,7 @@
 - model: menu.product
   pk: 18
   fields:
+    ordering: 2
     name: Loukoum
     priceEuroCents: 50
     is_active: true
@@ -172,6 +199,7 @@
 - model: menu.product
   pk: 19
   fields:
+    ordering: 1
     name: Cheese
     priceEuroCents: 350
     is_active: true
@@ -179,6 +207,7 @@
 - model: menu.product
   pk: 20
   fields:
+    ordering: 2
     name: Double Cheese
     priceEuroCents: 500
     is_active: true
@@ -186,6 +215,7 @@
 - model: menu.product
   pk: 21
   fields:
+    ordering: 3
     name: Chicken
     priceEuroCents: 450
     is_active: true
@@ -193,6 +223,7 @@
 - model: menu.product
   pk: 22
   fields:
+    ordering: 1
     name: Kebab
     priceEuroCents: 500
     is_active: true
@@ -200,6 +231,7 @@
 - model: menu.product
   pk: 23
   fields:
+    ordering: 2
     name: Köfte
     priceEuroCents: 500
     is_active: true
@@ -207,6 +239,7 @@
 - model: menu.product
   pk: 24
   fields:
+    ordering: 3
     name: Poulet
     priceEuroCents: 500
     is_active: true
@@ -214,6 +247,7 @@
 - model: menu.product
   pk: 25
   fields:
+    ordering: 4
     name: Triple Steak
     priceEuroCents: 600
     is_active: true
@@ -221,6 +255,7 @@
 - model: menu.product
   pk: 26
   fields:
+    ordering: 5
     name: Agneau
     priceEuroCents: 500
     is_active: true
@@ -228,6 +263,7 @@
 - model: menu.product
   pk: 27
   fields:
+    ordering: 6
     name: Adana
     priceEuroCents: 500
     is_active: true
@@ -235,6 +271,7 @@
 - model: menu.product
   pk: 28
   fields:
+    ordering: 1
     name: Kebab
     priceEuroCents: 450
     is_active: true
@@ -242,6 +279,7 @@
 - model: menu.product
   pk: 29
   fields:
+    ordering: 2
     name: 3 fromages
     priceEuroCents: 450
     is_active: true
@@ -249,6 +287,7 @@
 - model: menu.product
   pk: 30
   fields:
+    ordering: 3
     name: Steak
     priceEuroCents: 450
     is_active: true
@@ -256,6 +295,7 @@
 - model: menu.product
   pk: 31
   fields:
+    ordering: 4
     name: Nutella
     priceEuroCents: 300
     is_active: true
@@ -263,6 +303,7 @@
 - model: menu.product
   pk: 32
   fields:
+    ordering: 1
     name: Kebab
     priceEuroCents: 850
     is_active: true
@@ -270,6 +311,7 @@
 - model: menu.product
   pk: 33
   fields:
+    ordering: 2
     name: Köfte
     priceEuroCents: 850
     is_active: true
@@ -277,6 +319,7 @@
 - model: menu.product
   pk: 34
   fields:
+    ordering: 3
     name: Poulet
     priceEuroCents: 850
     is_active: true
@@ -284,6 +327,7 @@
 - model: menu.product
   pk: 35
   fields:
+    ordering: 5
     name: Agneau
     priceEuroCents: 850
     is_active: true
@@ -291,6 +335,7 @@
 - model: menu.product
   pk: 36
   fields:
+    ordering: 4
     name: Adana
     priceEuroCents: 850
     is_active: true
@@ -298,6 +343,7 @@
 - model: menu.product
   pk: 37
   fields:
+    ordering: 6
     name: Mixte
     priceEuroCents: 1200
     is_active: true
@@ -305,6 +351,7 @@
 - model: menu.product
   pk: 38
   fields:
+    ordering: 1
     name: Plat du jour
     priceEuroCents: 850
     is_active: true
@@ -312,6 +359,7 @@
 - model: menu.product
   pk: 39
   fields:
+    ordering: 3
     name: Salade
     priceEuroCents: 400
     is_active: true
@@ -319,33 +367,88 @@
 - model: menu.product
   pk: 40
   fields:
+    ordering: 2
     name: Café
     priceEuroCents: 1
     is_active: true
     category: 9
+- model: menu.product
+  pk: 41
+  fields:
+    ordering: 4
+    name: Le Big Mac
+    priceEuroCents: 500
+    is_active: true
+    category: 1
 - model: menu.screen
   pk: 1
   fields:
+    ordering: 10
     name: Page 1
     title: 'Le menu : Burger ou Sandwich + Frites + Soda 33 cl'
-    categories:
-    - 1
-    - 2
-    - 3
 - model: menu.screen
   pk: 2
   fields:
+    ordering: 20
     name: Page 2
     title: 'Les sandwichs : Burger ou Sandwich ou Panini'
-    categories:
-    - 5
-    - 6
-    - 7
 - model: menu.screen
   pk: 3
   fields:
+    ordering: 30
     name: Page 3
     title: Les assiettes (avec frites, crudités et blé concassé)
-    categories:
-    - 8
-    - 9
+- model: menu.categorylayout
+  pk: 1
+  fields:
+    category: 1
+    screen: 1
+    column: 1
+- model: menu.categorylayout
+  pk: 2
+  fields:
+    category: 2
+    screen: 1
+    column: 2
+- model: menu.categorylayout
+  pk: 3
+  fields:
+    category: 3
+    screen: 1
+    column: 3
+- model: menu.categorylayout
+  pk: 4
+  fields:
+    category: 4
+    screen: 1
+    column: 1
+- model: menu.categorylayout
+  pk: 5
+  fields:
+    category: 5
+    screen: 2
+    column: 1
+- model: menu.categorylayout
+  pk: 6
+  fields:
+    category: 6
+    screen: 2
+    column: 2
+- model: menu.categorylayout
+  pk: 7
+  fields:
+    category: 7
+    screen: 2
+    column: 3
+- model: menu.categorylayout
+  pk: 8
+  fields:
+    category: 8
+    screen: 3
+    column: 1
+- model: menu.categorylayout
+  pk: 9
+  fields:
+    category: 9
+    screen: 3
+    column: 2
