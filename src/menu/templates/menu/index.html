@@ -3,4 +3,5 @@
   {% for screen in screens %}
     <li> <a href="{% url 'screen_viewer' screen.id %}">{{screen}}</a></li>
   {% endfor %}
+  <li><a href="{% url 'admin:index' %}">Admin</li>
 </ul>
