@@ -6,6 +6,8 @@ from django.utils.text import slugify
 from admin_ordering.models import OrderableModel
 
 
+
+
 def category_upload_to(instance, filename):
     _, ext = splitext(filename)
     if not ext:
@@ -25,6 +27,11 @@ class Category(OrderableModel):
         return self.name
 
 
+class ProductsQuerySet(models.QuerySet):
+    def actives(self):
+        return self.filter(is_active=True)
+
+
 class Product(OrderableModel):
     name = models.CharField(max_length=75)
     priceEuroCents = models.IntegerField(
@@ -36,6 +43,8 @@ class Product(OrderableModel):
         Category, related_name="products", on_delete=models.SET_NULL, blank=True, null=True
     )
 
+    objects = ProductsQuerySet.as_manager()
+    
     def __str__(self):
         return self.name
 

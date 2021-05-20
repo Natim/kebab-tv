@@ -24,9 +24,9 @@
       <div class="category">
           <h3>{{ category.name }}</h3>
           <dl class="">
-              {% for product in category.products.all %}
-              <dt>{{ product.name }}</dt>
-              <dd>{{ product.priceEuroCents|euros }}</dd>
+              {% for product in category.products.actives %}
+                <dt>{{ product.name }}</dt>
+                <dd>{{ product.priceEuroCents|euros }}</dd>
               {% endfor %}
           </dl>
           {% if category.illustration %}
@@ -40,9 +40,9 @@
           <div class="category">
               <h3>{{ category.name }}</h3>
               <dl class="">
-                  {% for product in category.products.all %}
-                  <dt>{{ product.name }}</dt>
-                  <dd>{{ product.priceEuroCents|euros }}</dd>
+                  {% for product in category.products.actives %}
+                    <dt>{{ product.name }}</dt>
+                    <dd>{{ product.priceEuroCents|euros }}</dd>
                   {% endfor %}
               </dl>
           </div>
