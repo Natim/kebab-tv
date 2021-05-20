@@ -2,18 +2,18 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background: #106b94;
 }
 
 h1 {
   margin: 0;
   text-align: center;
-  background: url('../images/footer.jpg');
 }
 
 h2 {
   font-family: 'Lobster', cursive;
-  color: #E6A762;
-  background-color: #873926;
+  color: #efc905;
+  background-color: #a2050e;
   font-size: 75px;
   text-align: center;
   margin: 20px 0;
@@ -30,7 +30,8 @@ h2 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: url('../images/footer.jpg');
+  color: #700400;
+  background: #5ba5cb;
   border-radius: 15px;
   margin: 0 20px;
   padding: 15px;
@@ -49,7 +50,6 @@ h2 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: url('../images/footer.jpg');
   border-radius: 15px;
   margin: 10px 20px;
   padding: 15px;
@@ -64,8 +64,8 @@ h2 {
 
 h3 {
   font-family: 'Lobster', cursive;
-  color: #E6A762;
-  background-color: #873926;
+  color: #efc905;
+  background-color: #a2050e;
   font-size: 60px;
   text-align: center;
   margin: 0;
